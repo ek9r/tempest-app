@@ -27,14 +27,20 @@
         "post-autoload-dump": [
             "@php ./vendor/bin/tempest discovery:generate --no-interaction"
         ],
-        "phpunit": "vendor/bin/phpunit --display-warnings --display-skipped --display-deprecations --display-errors --display-notices",
         "fmt": "vendor/bin/mago fmt",
-        "lint": "vendor/bin/mago lint --fix --format-after-fix",
+        "lint": "vendor/bin/mago lint --reporting-format=rich && vendor/bin/mago lint --fix --format-after-fix",
+        "analyse": "vendor/bin/mago analyse",
+        "test": "vendor/bin/phpunit --display-warnings --display-skipped --display-deprecations --display-errors --display-notices",
         "qa": [
             "composer fmt",
-            "composer phpunit",
-            "composer lint"
-        ]
+            "composer lint",
+            "composer analyse",
+            "composer test"
+        ],
+        "github:lint": "vendor/bin/mago lint --potentially-unsafe --minimum-fail-level=note --reporting-format=github",
+        "github:fmt": "vendor/bin/mago fmt --check",
+        "github:analyse": "vendor/bin/mago analyse",
+        "github:test": "vendor/bin/phpunit"
     },
     "license": "MIT",
     "minimum-stability": "dev",
