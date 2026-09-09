@@ -18,7 +18,7 @@
           <img :if="$logo" src="{{ $logo }}" alt="{{ $title }}" class="mx-auto mb-0 w-48 sm:w-56 h-48 sm:h-56 object-contain">
           <!-- Text -->
           <h1 class="font-semibold text-werkswind-text text-5xl sm:text-7xl text-balance tracking-tight">{{ $title }}</h1>
-          <p class="mt-8 font-medium text-werkswind-muted text-lg sm:text-xl/8 text-pretty">Following the wind of change.</p>
+          <p class="mt-8 font-medium text-werkswind-muted text-lg sm:text-xl/8 text-pretty">Following the Wind of Changelogs.</p>
         </div>
       </div>
     </div>
