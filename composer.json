@@ -19,13 +19,9 @@
         }
     },
     "scripts": {
-        "post-install-cmd": [
-            "@php ./vendor/bin/tempest install framework -f",
-            "@php ./tempest discovery:generate --no-interaction",
-            "./bin/setup"
-        ],
         "post-autoload-dump": [
-            "@php ./vendor/bin/tempest discovery:generate --no-interaction"
+            "@php ./vendor/bin/tempest discovery:generate --no-interaction",
+            "./bin/setup"
         ],
         "fmt": "vendor/bin/mago fmt",
         "lint": "vendor/bin/mago lint --reporting-format=rich && vendor/bin/mago lint --fix --format-after-fix",
