@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@theme {
+    --color-werkswind-bg: #F5F9FC;
+
+    --color-werkswind-text: #002A60;
+    --color-werkswind-muted: #54708F;
+
+    /*
+    --color-werkswind-primary: #0078D0;
+    --color-werkswind-accent: #00A8F0;
+    */
+
+    --color-werkswind-gradient-from: #00A8F0;
+    --color-werkswind-gradient-to: #80F0F0;
+}

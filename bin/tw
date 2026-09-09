@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -e
+
+TAILWIND="${TAILWIND:-tailwindcss}"
+
+"$TAILWIND" \
+    -i ./resources/css/app.css \
+    -o ./public/css/app.css \
+    "$@"
